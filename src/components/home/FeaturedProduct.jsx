@@ -36,7 +36,7 @@ const FeaturedProduct = () => {
             
             <div className={model ? 'model open' : 'model'}>
                 <PrismaZoom>
-                    <img src={tempImg} /> {/* A text that can be zoomed and dragged */}
+                    <img src={tempImg} alt=''/> {/* A text that can be zoomed and dragged */}
                 </PrismaZoom>
                 <i onClick={() => setModel(false)} className="fa-solid fa-xmark fa-lg"></i>
             </div>
@@ -44,7 +44,7 @@ const FeaturedProduct = () => {
             <div className='gallery'>
                 {
                     data.map((item, i) => {
-                        return <img className='image' key={i} src={item.imgSrc}
+                        return <img className='image' key={i} src={item.imgSrc} alt=''
                             onClick={() => getImg(item.imgSrc)}
                         />
                     })

@@ -54,8 +54,8 @@ const Home = () => {
 
     const handleImage = (index) => {
         setImage(
-            index == 1 ? approachTimeAndMaterial : index == 2 ? approachFixedPrice :
-                index == 3 ? approachDedicatedTeam : image
+            index === 1 ? approachTimeAndMaterial : index === 2 ? approachFixedPrice :
+                index === 3 ? approachDedicatedTeam : image
         )
     }
     return (
@@ -70,14 +70,14 @@ const Home = () => {
             <div className='client-companies-container' >
                 <p> Companies we have worked for </p>
                 <marquee behavior="scroll" direction="left">
-                    <img src={clientCompanyOne} />
-                    <img src={clientCompanyTwo} />
-                    <img src={clientCompanyThree} />
-                    <img src={clientCompanyFour} />
-                    <img src={clientCompanyFive} />
-                    <img src={clientCompanySix} />
-                    <img src={clientCompanySeven} />
-                    <img src={clientCompanyEight} />
+                    <img src={clientCompanyOne} alt='' />
+                    <img src={clientCompanyTwo} alt='' />
+                    <img src={clientCompanyThree} alt='' />
+                    <img src={clientCompanyFour} alt='' />
+                    <img src={clientCompanyFive} alt='' />
+                    <img src={clientCompanySix} alt='' />
+                    <img src={clientCompanySeven} alt='' />
+                    <img src={clientCompanyEight} alt='' />
                 </marquee>
             </div>
 
@@ -102,7 +102,7 @@ const Home = () => {
                 </div>
 
                 <div>
-                    <img src={workingInLoop} />
+                    <img src={workingInLoop} alt=''/>
                 </div>
             </div>
 
@@ -164,7 +164,7 @@ const Home = () => {
                         </div>
                     </div>
 
-                    <img className='development-approach-image' src={image} />
+                    <img className='development-approach-image' src={image} alt=''/>
                 </div>
             </div>
 

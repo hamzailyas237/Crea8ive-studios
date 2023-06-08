@@ -5,7 +5,6 @@ import ContactForm from '../home/ContactForm'
 import logo from '../../images/logo.gif'
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
-import Button from 'react-bootstrap/Button';
 
 const Footer = () => {
     return (
@@ -17,7 +16,7 @@ const Footer = () => {
             <div className='footer-container'>
 
                 <div className='footer-section-one'>
-                    <img style={{ width: '180px' }} src={logo} />
+                    <img style={{ width: '180px' }} src={logo} alt='logo'/>
                     <small>
                         Logo Mantic provides broad range of technology services to help organizations
                         translate their business objectives in to IT initiatives and solutionS

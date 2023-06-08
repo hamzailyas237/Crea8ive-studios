@@ -19,7 +19,7 @@ const Navbar = () => {
     <div className="navbar-container">
 
       <div style={{ display: "flex", justifyContent: 'space-between', alignItems: 'center' }}>
-        <img className='logo' src={logo} />
+        <img className='logo' src={logo} alt='logo'/>
 
         <div id="menu-btn" className="menu-btn">
           <i onClick={toggleMenu} className="fas fa-bars"></i>
